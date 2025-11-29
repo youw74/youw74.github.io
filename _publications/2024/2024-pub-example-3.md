@@ -14,7 +14,7 @@ cover:          /assets/images/covers/AVTrack.png
 authors:
   - Yongxin Li
   - Mengyuan Liu
-  - You Wu
+  - <strong>You Wu</strong>
   - Xucheng Wang
   - Xiangyang Yang
   - Shuiwang Li
