@@ -1,7 +1,7 @@
 ---
 title:          "Tracking transforming objects: A benchmark"
 date:           2024-01-05 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Chinese Conference on Pattern Recognition and Computer Vision (PRCV)"
 pub_date:       "2024"
 # abstract: >-
