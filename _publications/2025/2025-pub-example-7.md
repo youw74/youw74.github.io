@@ -1,8 +1,8 @@
 ---
-title:          "Learning an Adaptive and View-Invariant Vision Transformer for Real-Time UAV Tracking"
-date:           2025-05-1 00:01:00 +0800
+title:          "Learning Occlusion-Robust Vision Transformers for Real-Time UAV Tracking"
+date:           2025-05-21 00:01:00 +0800
 selected:       true
-pub:            "IEEE Transactions on Circuits and Systems for Video Technology (IEEE TCSVT 2025)"
+pub:            "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)"
 pub_date:       "2025"
 # semantic_scholar_id: 11ac0b5634a282f1a0da204b98e7473d8b480dfb  # use this to retrieve citation count
 # abstract: >-
@@ -10,16 +10,14 @@ pub_date:       "2025"
 #   The tangerine is a type of citrus fruit that is orange in color, that is considered either a variety of Citrus reticulata, the mandarin orange, or a closely related species, under the name Citrus tangerina, or yet as a hybrid (Citrus × tangerina) of mandarin orange varieties, with some pomelo contribution.
 #   According to the Oxford English Dictionary (OED), the word "tangerine" was originally an adjective meaning "Of or pertaining to, or native of Tangier, a seaport in Morocco, on the Strait of Gibraltar" and "a native of Tangier." The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. The OED cites this usage from Addison's The Tatler in 1710 with similar uses from the 1800s. The adjective was applied to the fruit, once known scientifically as "Citrus nobilis var. tangeriana" which grew in the region of Tangiers. This usage appears in the 1800s.
 
-cover:          /assets/images/covers/AVTrack-MD.png
+cover:          /assets/images/covers/ORTrack.png
 authors:
   - <strong>You Wu</strong>
-  - Yongxin Li
-  - Mengyuan Liu
   - Xucheng Wang
   - Xiangyang Yang
-  - Hengzhou Ye
+  - Mengyuan Liu
   - Dan Zeng
-  - Qijun Zhao
+  - Hengzhou Ye
   - Shuiwang Li
 
 # links:
