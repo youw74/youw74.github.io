@@ -1,6 +1,6 @@
 ---
 title:          "Learning adaptive and view-invariant vision transformer for real-time UAV tracking"
-date:           2024
+date:           2024-05-12 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
