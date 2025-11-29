@@ -1,11 +1,11 @@
 ---
 title:          "Learning adaptive and view-invariant vision transformer for real-time UAV tracking"
-date:           2024-05-12 00:01:00 +0800
+date:           2024
 selected:       true
-pub:            "International Conference on Machine Learning (ICML 2024)"
+pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2024"
 semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 # abstract: >-
@@ -20,5 +20,5 @@ authors:
   - Shuiwang Li
 links:
   Code: https://github.com/luost26/academic-homepage
-  Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
+  # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
