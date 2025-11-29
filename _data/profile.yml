@@ -3,9 +3,9 @@ secondary_name: ""
 navbar_name: "You Wu (吴佑)"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: Research Assistant
+- name: Westlake University
+  # logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
 
 email: "your@email.com"
