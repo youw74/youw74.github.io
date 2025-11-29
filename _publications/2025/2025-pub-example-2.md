@@ -12,10 +12,10 @@ pub_date:       "2025"
 
 cover:          /assets/images/covers/ABATrack.png
 authors:
-  - Xiangyang Yang (MIT)
+  - Xiangyang Yang
   - Dan Zeng
   - Xucheng Wang
-  - You Wu
+  - <strong>You Wu</strong>
   - Hengzhou Ye
   - Qijun Zhao
   - Shuiwang Li
