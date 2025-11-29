@@ -1,5 +1,6 @@
 ---
 title:          "Learning adaptive and view-invariant vision transformer for real-time UAV tracking"
+paper_url:      "https://example.com/paper-link"  # 请替换为实际的论文链接
 date:           2024-05-12 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Machine Learning (ICML)"
@@ -18,7 +19,7 @@ authors:
   - Xucheng Wang
   - Xiangyang Yang
   - Shuiwang Li
-links:
-  Code: https://github.com/wuyou3474/AVTrack
+# links:
+#   Code: https://github.com/wuyou3474/AVTrack
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
