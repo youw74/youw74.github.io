@@ -1,6 +1,7 @@
 ---
 title:          "Learning Motion Blur Robust Vision Transformers for Real-Time UAV Tracking"
 date:           2025-02-21 00:01:00 +0800
+paper_url:      "https://arxiv.org/pdf/2407.05383"
 selected:       false
 pub:            "Expert Systems with Applications (ESWA)"
 pub_date:       "2025"

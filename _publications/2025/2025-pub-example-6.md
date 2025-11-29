@@ -1,6 +1,7 @@
 ---
 title:          "Learning an Adaptive and View-Invariant Vision Transformer for Real-Time UAV Tracking"
 date:           2025-05-1 00:01:00 +0800
+paper_url:      "https://arxiv.org/pdf/2412.20002"
 selected:       true
 pub:            "IEEE Transactions on Circuits and Systems for Video Technology (IEEE TCSVT)(ICML2024 extension)"
 pub_date:       "2025"

@@ -1,6 +1,7 @@
 ---
 title:          "Adaptively bypassing vision transformer blocks for efficient visual tracking"
 date:           2025-01-21 00:01:00 +0800
+paper_url:      "https://arxiv.org/pdf/2406.08037"
 selected:       false
 pub:            "Pattern Recognition (PR)"
 pub_date:       "2025"

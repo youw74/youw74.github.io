@@ -1,5 +1,6 @@
 ---
 title:          "Tracking transforming objects: A benchmark"
+paper_url:      "https://arxiv.org/pdf/2404.18143"
 date:           2024-01-05 00:01:00 +0800
 selected:       false
 pub:            "Chinese Conference on Pattern Recognition and Computer Vision (PRCV)"

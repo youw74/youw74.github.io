@@ -1,6 +1,6 @@
 ---
 title:          "Learning adaptive and view-invariant vision transformer for real-time UAV tracking"
-paper_url:      "https://example.com/paper-link"  # 请替换为实际的论文链接
+paper_url:      "https://openreview.net/pdf?id=eaNLvrP8n1"
 date:           2024-05-12 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Machine Learning (ICML)"

@@ -1,6 +1,7 @@
 ---
 title:          "Learning Occlusion-Robust Vision Transformers for Real-Time UAV Tracking"
 date:           2025-05-21 00:01:00 +0800
+paper_url:      "https://openaccess.thecvf.com/content/CVPR2025/papers/Wu_Learning_Occlusion-Robust_Vision_Transformers_for_Real-Time_UAV_Tracking_CVPR_2025_paper.pdf"
 selected:       true
 pub:            "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
 pub_date:       "2025"

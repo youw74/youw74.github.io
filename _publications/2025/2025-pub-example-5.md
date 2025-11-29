@@ -1,6 +1,7 @@
 ---
 title:          "MambaNUT: Nighttime UAV Tracking via Mamba-based Adaptive Curriculum Learning"
 date:           2025-03-21 00:01:00 +0800
+paper_url:      "https://arxiv.org/pdf/2412.00626"
 selected:       true
 pub:            "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
 pub_date:       "2025"
