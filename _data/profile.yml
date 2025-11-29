@@ -37,8 +37,7 @@ portrait_caption: >-
 education:
 - name: Guilin University of Technology
   # logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    M.Eng. in Computer Technology
+  position: M.Eng. in Computer Technology
   date: 09.2022 - 06.2025
 # - name: Peking University
 #   logo: /assets/images/badges/PKU_red.png
