@@ -32,40 +32,117 @@ body_attr: >-
 </div>
 
 <script>
-$(function() {
-    // Initialize Bootstrap scrollspy
-    $('body').scrollspy({ target: '#navbar-year', offset: 100 });
+$(document).ready(function() {
+    var manualActiveHash = null;
+    var isManualClick = false;
     
-    // Handle click events on year links
+    // Initialize Bootstrap scrollspy (but we'll override its active management)
+    $('body').scrollspy({ 
+        target: '#navbar-year', 
+        offset: 100 
+    });
+    
+    // Function to set active state
+    function setActive(hash) {
+        $('#navbar-year a').removeClass('active');
+        if (hash) {
+            var $link = $('#navbar-year a[href="' + hash + '"]');
+            if ($link.length) {
+                $link.addClass('active');
+            }
+        }
+    }
+    
+    // Handle click events - immediately and forcefully update
     $('#navbar-year a').on('click', function(e) {
-        e.preventDefault();
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            // Remove active class from all links
-            $('#navbar-year a').removeClass('active');
-            // Add active class to clicked link
-            $(this).addClass('active');
-            // Smooth scroll to target
-            $('html, body').animate({
-                scrollTop: target.offset().top - 100
-            }, 500);
+        var href = $(this).attr('href');
+        manualActiveHash = href;
+        isManualClick = true;
+        
+        // Update immediately
+        setActive(href);
+        
+        // Keep forcing it for a while to prevent scrollspy from overriding
+        var forceCount = 0;
+        var forceInterval = setInterval(function() {
+            forceCount++;
+            setActive(manualActiveHash);
+            if (forceCount >= 30) { // 3 seconds
+                clearInterval(forceInterval);
+                isManualClick = false;
+            }
+        }, 100);
+    });
+    
+    // Intercept scrollspy's activate event
+    $('body').on('activate.bs.scrollspy', function (e) {
+        // If we manually clicked, ignore scrollspy's update
+        if (isManualClick && manualActiveHash) {
+            setTimeout(function() {
+                setActive(manualActiveHash);
+            }, 5);
+            return false;
         }
     });
     
-    // Update active state on scroll
+    // Manual scroll handler (only when not manually clicking)
+    var scrollTimeout;
     $(window).on('scroll', function() {
-        var scrollPos = $(window).scrollTop() + 150;
-        $('#navbar-year a').each(function() {
-            var currLink = $(this);
-            var refElement = $(currLink.attr('href'));
-            if (refElement.length && refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('#navbar-year a').removeClass('active');
-                currLink.addClass('active');
+        if (isManualClick) return; // Don't update during manual click
+        
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+            var scrollPos = $(window).scrollTop() + 150;
+            var activeHash = null;
+            
+            // Find which section is currently in view
+            $('#navbar-year a').each(function() {
+                var href = $(this).attr('href');
+                if (href && href.startsWith('#')) {
+                    var $target = $(href);
+                    if ($target.length) {
+                        var targetTop = $target.offset().top;
+                        if (targetTop <= scrollPos && targetTop + $target.outerHeight() > scrollPos - 100) {
+                            activeHash = href;
+                            return false; // break
+                        }
+                    }
+                }
+            });
+            
+            if (activeHash && !isManualClick) {
+                manualActiveHash = activeHash;
+                setActive(activeHash);
             }
-        });
+        }, 150);
     });
     
-    // Set initial active state based on scroll position
-    $(window).trigger('scroll');
+    // Handle hash change
+    $(window).on('hashchange', function() {
+        var hash = window.location.hash;
+        manualActiveHash = hash;
+        setActive(hash);
+    });
+    
+    // Set initial state
+    setTimeout(function() {
+        if (window.location.hash) {
+            manualActiveHash = window.location.hash;
+            setActive(window.location.hash);
+        } else {
+            // Check scroll position
+            var scrollPos = $(window).scrollTop() + 150;
+            $('#navbar-year a').each(function() {
+                var href = $(this).attr('href');
+                if (href && href.startsWith('#')) {
+                    var $target = $(href);
+                    if ($target.length && $target.offset().top <= scrollPos) {
+                        manualActiveHash = href;
+                        setActive(href);
+                    }
+                }
+            });
+        }
+    }, 300);
 });
 </script>
