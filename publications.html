@@ -30,3 +30,42 @@ body_attr: >-
     </div>
 
 </div>
+
+<script>
+$(function() {
+    // Initialize Bootstrap scrollspy
+    $('body').scrollspy({ target: '#navbar-year', offset: 100 });
+    
+    // Handle click events on year links
+    $('#navbar-year a').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            // Remove active class from all links
+            $('#navbar-year a').removeClass('active');
+            // Add active class to clicked link
+            $(this).addClass('active');
+            // Smooth scroll to target
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 500);
+        }
+    });
+    
+    // Update active state on scroll
+    $(window).on('scroll', function() {
+        var scrollPos = $(window).scrollTop() + 150;
+        $('#navbar-year a').each(function() {
+            var currLink = $(this);
+            var refElement = $(currLink.attr('href'));
+            if (refElement.length && refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#navbar-year a').removeClass('active');
+                currLink.addClass('active');
+            }
+        });
+    });
+    
+    // Set initial active state based on scroll position
+    $(window).trigger('scroll');
+});
+</script>
